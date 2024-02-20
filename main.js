@@ -7,6 +7,8 @@ hiddenInput.style.position = 'absolute';
 hiddenInput.style.opacity = '0';
 document.body.appendChild(hiddenInput);
 hiddenInput.focus();
+simulateTouchEvent(body, 'touchstart');
+
 
 play.addEventListener('click', function () {
     firstPage.style.display = 'none';
