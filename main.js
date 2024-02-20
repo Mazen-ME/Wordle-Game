@@ -6,8 +6,13 @@ let hiddenInput = document.createElement('input');
 hiddenInput.style.position = 'absolute';
 hiddenInput.style.opacity = '0';
 document.body.appendChild(hiddenInput);
-hiddenInput.focus();
-simulateTouchEvent(body, 'touchstart');
+
+play.addEventListener('click', function () {
+    firstPage.style.display = 'none';
+    gamePage.classList.remove('d-none');
+    hiddenInput.focus();
+})
+
 
 
 play.addEventListener('click', function () {
