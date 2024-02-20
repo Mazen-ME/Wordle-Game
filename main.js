@@ -3,8 +3,7 @@ let firstPage = document.getElementById('first-page');
 let gamePage = document.getElementById('game-page');
 
 let hiddenInput = document.createElement('input');
-hiddenInput.style.position = 'absolute';
-hiddenInput.style.opacity = '0';
+hiddenInput.classList.add('d-none');
 document.body.appendChild(hiddenInput);
 
 play.addEventListener('click', function () {
